@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #06415c;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+label {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.movie-container{
+  margin: 20px 0;  
+}
+
+.container{
+    perspective: 1000px;
+    margin-bottom: 25px;
+}
+
+.movie-container select {
+    background-color: #35b6bb93;
+    border: 2px solid #6febf63d;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 3px 10px 3px 10px;
+    font-family: cursive;
+}
+.seat {
+     background-color: rgba(248, 242, 242, 0.904);
+     height: 12px;
+     width: 15px;
+     margin: 3px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     border: 3px double #215c61;
+}
+
+
+.row {
+     display: flex;
+}
+
+ .seat.selected {
+     background-color: #6feaf6;
+     border: 3px double #215c61;
+ }
+
+ .seat.occupied {
+     background-color: #444451;
+ }
+
+ .seat:nth-of-type(2) {
+     margin-right: 18px;
+ }
+ .seat:nth-last-of-type(3) {
+    margin-right: 18px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgba(245, 245, 245, 0.836);
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+.row{
+     display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 15;
+    transform: rotatex(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+p.text {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+p.text span{
+    color: #6feaf6;
+    font-size: 17px;
+}
